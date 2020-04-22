@@ -1,0 +1,14 @@
+// When you adding your local project to git hub repository, make sure to add .project and .classPath files. 
+// Because they holds the information about which Project Wizard the project belongs too.
+
+// Add your git hub repository to git perspective.
+// When trying to import the above repository, select Project Wizard and simple project.
+// if you have .project and .classPath file, you dont get any errors.
+// Since .project and .classPath have the project names
+
+
+
+When you want to add/import a project which is in Git perspective to Java perspective, 
+when doing so, import as a maven/grdle project. (just try)
+but importing as a existing project also would work
+
