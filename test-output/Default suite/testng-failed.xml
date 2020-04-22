@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="annotations.ParametersInTestNG">
+      <class name="testNGParallel.TestListeners">
         <methods>
-          <include name="launchBrowser"/>
+          <include name="failure"/>
         </methods>
-      </class> <!-- annotations.ParametersInTestNG -->
+      </class> <!-- testNGParallel.TestListeners -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

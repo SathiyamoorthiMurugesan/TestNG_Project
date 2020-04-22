@@ -1,39 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="19373" started-at="2020-04-03T20:41:30 IST" finished-at="2020-04-03T20:41:49 IST">
+  <suite name="Default suite" duration-ms="215" started-at="2020-04-18T12:37:33 IST" finished-at="2020-04-18T12:37:33 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="19373" started-at="2020-04-03T20:41:30 IST" finished-at="2020-04-03T20:41:49 IST">
-      <class name="annotations.ParametersInTestNG">
-        <test-method status="FAIL" signature="launchBrowser(java.lang.String)[pri:0, instance:annotations.ParametersInTestNG@7791a895]" name="launchBrowser" duration-ms="19218" started-at="2020-04-03T20:41:30 IST" finished-at="2020-04-03T20:41:49 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
+    <test name="Default test" duration-ms="215" started-at="2020-04-18T12:37:33 IST" finished-at="2020-04-18T12:37:33 IST">
+      <class name="testNGParallel.TestListeners">
+        <test-method status="FAIL" signature="failure()[pri:0, instance:testNGParallel.TestListeners@520a3426]" name="failure" duration-ms="33" started-at="2020-04-18T12:37:33 IST" finished-at="2020-04-18T12:37:33 IST">
+          <exception class="java.lang.ArithmeticException">
             <message>
-              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LENOVO', ip: '192.168.43.253', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: driver.version: FirefoxDriver]]>
+              <![CDATA[/ by zero]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LENOVO', ip: '192.168.43.253', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: driver.version: FirefoxDriver
-at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:100)
-at java.util.Optional.orElseGet(Unknown Source)
-at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at annotations.ParametersInTestNG.launchBrowser(ParametersInTestNG.java:29)
+              <![CDATA[java.lang.ArithmeticException: / by zero
+at testNGParallel.TestListeners.failure(TestListeners.java:16)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -64,11 +45,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- java.lang.ArithmeticException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-      </class> <!-- annotations.ParametersInTestNG -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- failure -->
+        <test-method status="PASS" signature="success()[pri:0, instance:testNGParallel.TestListeners@520a3426]" name="success" duration-ms="3" started-at="2020-04-18T12:37:33 IST" finished-at="2020-04-18T12:37:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- success -->
+      </class> <!-- testNGParallel.TestListeners -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
