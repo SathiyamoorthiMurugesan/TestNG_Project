@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGParallel.TestListeners">
+      <class name="annotations.DataProviderTwoURLs">
         <methods>
-          <include name="failure"/>
+          <include name="OpenTwoURLsUsingDataProvider" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- testNGParallel.TestListeners -->
+      </class> <!-- annotations.DataProviderTwoURLs -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

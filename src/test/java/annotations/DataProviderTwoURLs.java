@@ -2,6 +2,8 @@ package annotations;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.GeckoDriverInfo;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.DataProvider;
@@ -14,8 +16,10 @@ public class DataProviderTwoURLs {
 	@Test (dataProvider = "URL")
 	
 	public void OpenTwoURLsUsingDataProvider(String URL) {
-		System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
-		driver = new ChromeDriver();
+//		System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.gecko.driver", ".\\drivers\\geckodriver.exe");
+		driver = new FirefoxDriver();
+//		driver = new ChromeDriver();
 		driver.get(URL);
 	}
 	
