@@ -10,7 +10,7 @@ public class DependsOnMethod {
 		System.out.println("I am group1 method");
 	}
 	
-//	@Test (dependsOnMethods = "group1")
+	@Test (dependsOnMethods = "group1")
 	public void group2() {
 		System.out.println("I am belongs to group2");
 	}

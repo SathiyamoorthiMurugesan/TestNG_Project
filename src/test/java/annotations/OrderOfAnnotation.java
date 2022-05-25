@@ -12,55 +12,25 @@ import org.testng.annotations.Test;
 
 public class OrderOfAnnotation {
 
-	@Test
-	public void TestAnnotation( ) {
-		System.out.println("+++++++++++ I am Test method++++++++++++++");
+	@Test(priority=0)
+	public void Znnotation( ) {
+		System.out.println("Annotation");
 	}
 	
-	@BeforeSuite
-	public void beforeSuite() {
-		System.out.println("I am @BeforeSuite");
+	@Test(priority=0)
+	public void Sum( ) {
+		System.out.println("TestSum");
 	}
 	
-	@AfterSuite
-	public void afterSuite() {
-		System.out.println("I am @AfterSuite");
+	@Test(priority=1)
+	public void Calculation( ) {
+		System.out.println("calculation");
 	}
 	
-	@BeforeTest
-	public void beforeTest() {
-		System.out.println("I am @BeforeTest");
+	@Test(priority=2)
+	public void MiminumCalc( ) {
+		System.out.println("TMinimum Clc");
 	}
-	
-	@AfterTest
-	public void afterTest() {
-		System.out.println("I am @AfterTest");
-	}
-
-	
-	@BeforeClass
-	public void beforeClass() {
-		System.out.println("I am @BeforeClass");
-	}
-	
-	@AfterClass
-	public void afterClass() {
-		System.out.println("I am @AfterClass");
-	}
-	
-	@BeforeMethod
-	public void beforeMethod() {
-		System.out.println("I am @BeforeMethod");
-	}
-	
-	@AfterMethod
-	public void afterMethod() {
-		System.out.println("I am @AfterMethod");
-	}
-	
-	
-	
-	
 	
 	
 	
