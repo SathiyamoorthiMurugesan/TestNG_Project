@@ -6,7 +6,8 @@ public class DependsOnGroup {
 
 	@Test(groups= {"group1"})
 	public void group1() {
-		System.out.println(1/0);
+//		System.out.println(1/0);
+		System.out.println("I am belongs to group111111");
 	}
 	
 	@Test(groups= {"group2"})

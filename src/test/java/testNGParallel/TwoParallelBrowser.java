@@ -15,7 +15,7 @@ public class TwoParallelBrowser {
 	public void openFirstBrowser() {
 		System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("https://www.google.com/");
+		driver.get("https://www.facebook.com/");
 		System.out.println(Thread.currentThread().getId());
 	}
 	
