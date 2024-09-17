@@ -4,6 +4,17 @@ import org.testng.annotations.*;
 
 public class AllAnnotations {
 	
+	@Test
+	public void method1() throws InterruptedException {
+		System.out.println("Hello");
+		Thread.sleep(2000);
+		method2();
+		Thread.sleep(2000);
+	}
+	
+	public void method2() {
+		System.out.println("Hiiiii");
+	}
 	
 	@Test (alwaysRun = true)
 	public void TestAnnotationWithAlwaysRunTrue( ) {
@@ -81,7 +92,7 @@ public class AllAnnotations {
 		System.out.println("I am invocation count2 method");
 	}
 	
-	@Test (priority=1)
+	@Test (priority=0)
 	public void TestAnnotationWithPriority1() {
 		System.out.println(" I am priority1 method");
 	}
