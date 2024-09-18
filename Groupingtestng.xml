@@ -6,7 +6,8 @@
   	<groups>
     
   		<run>
-  		<exclude name="group2"/>
+  		<include name="A2"/>
+  		<include name="A1"/>
   		</run>
   
   	</groups>

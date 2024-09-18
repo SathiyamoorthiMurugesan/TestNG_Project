@@ -1,5 +1,6 @@
 package annotations;
 
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class AllAnnotations {
@@ -14,6 +15,7 @@ public class AllAnnotations {
 	
 	public void method2() {
 		System.out.println("Hiiiii");
+		Assert.assertEquals("1", "2");
 	}
 	
 	@Test (alwaysRun = true)

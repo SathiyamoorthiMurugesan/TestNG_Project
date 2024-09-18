@@ -2,9 +2,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
-  <parameter name="browser" value="chrome"></parameter>
+  <parameter name="browser1" value="chrome"></parameter>
+  <parameter name="a" value="10"></parameter>
+  <parameter name="b" value="10"></parameter>
    <classes>
-      <class name="annotations.ParametersInTestNG"/>
+      <class name="annotations.ParametersInTestNG">
+      <methods>
+		<!-- <exclude name="method1"></exclude>-->  
+	  </methods>
+      </class>
     </classes>
   
   </test> <!-- Test -->

@@ -13,12 +13,12 @@ public class ParametersInTestNG {
 	WebDriver driver;
 //	public static String browser;
 	
-	@Parameters({"browser"})
+	@Parameters({"browser1"})
 	@Test
 	public void launchBrowser(String browser) {
 		switch(browser){
 			case "chrome":
-				System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver_128.exe");
 				driver = new ChromeDriver();
 				break;
 			case "firefox":
@@ -30,6 +30,12 @@ public class ParametersInTestNG {
 		driver.get("https://www.toolsqa.com/handling-alerts-using-selenium-webdriver/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	}
+	
+	@Parameters({"a", "b"})
+	@Test
+	public void method1(int a, int b) {
+		System.out.println(a);
 	}
 
 }
